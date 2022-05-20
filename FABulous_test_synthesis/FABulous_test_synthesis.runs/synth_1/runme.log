@@ -1,0 +1,846 @@
+
+*** Running vivado
+    with args -log LUT4AB_ConfigMem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LUT4AB_ConfigMem.tcl
+
+
+****** Vivado v2018.2.2 (64-bit)
+  **** SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+  **** IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/opt/Xilinx/Vivado/2018.2/scripts/Vivado_init.tcl'
+80 Beta devices matching pattern found, 0 enabled.
+source LUT4AB_ConfigMem.tcl -notrace
+Command: synth_design -top LUT4AB_ConfigMem -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2054 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1309.430 ; gain = 98.000 ; free physical = 2005 ; free virtual = 116628
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LUT4AB_ConfigMem' [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/LUT4AB_ConfigMem.v:1]
+	Parameter MaxFramesPerCol bound to: 20 - type: integer 
+	Parameter FrameBitsPerRow bound to: 32 - type: integer 
+	Parameter NoConfigBits bound to: 616 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LHQD1' [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/models_pack.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'LHQD1' (1#1) [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/models_pack.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4AB_ConfigMem' (2#1) [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/LUT4AB_ConfigMem.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1354.055 ; gain = 142.625 ; free physical = 2015 ; free virtual = 116639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1354.055 ; gain = 142.625 ; free physical = 2017 ; free virtual = 116640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1362.059 ; gain = 150.629 ; free physical = 2016 ; free virtual = 116639
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/models_pack.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'QN_reg' [/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.srcs/sources_1/imports/trial1.0.0/models_pack.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1370.066 ; gain = 158.637 ; free physical = 2015 ; free virtual = 116639
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1691 ; free virtual = 116316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1691 ; free virtual = 116316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1681 ; free virtual = 116306
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1676 ; free virtual = 116300
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1675 ; free virtual = 116300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1687 ; free virtual = 116312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1688 ; free virtual = 116313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1689 ; free virtual = 116313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1689 ; free virtual = 116313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |    12|
+|2     |LUT1 |    32|
+|3     |LD   |  1232|
+|4     |IBUF |    52|
+|5     |OBUF |  1232|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------+----------+------+
+|      |Instance             |Module    |Cells |
++------+---------------------+----------+------+
+|1     |top                  |          |  2560|
+|2     |  Inst_Frame0_bit0   |LHQD1     |     3|
+|3     |  Inst_Frame0_bit1   |LHQD1_0   |     3|
+|4     |  Inst_Frame0_bit10  |LHQD1_1   |     3|
+|5     |  Inst_Frame0_bit11  |LHQD1_2   |     3|
+|6     |  Inst_Frame0_bit12  |LHQD1_3   |     3|
+|7     |  Inst_Frame0_bit13  |LHQD1_4   |     3|
+|8     |  Inst_Frame0_bit14  |LHQD1_5   |     3|
+|9     |  Inst_Frame0_bit15  |LHQD1_6   |     3|
+|10    |  Inst_Frame0_bit16  |LHQD1_7   |     3|
+|11    |  Inst_Frame0_bit17  |LHQD1_8   |     3|
+|12    |  Inst_Frame0_bit18  |LHQD1_9   |     3|
+|13    |  Inst_Frame0_bit19  |LHQD1_10  |     3|
+|14    |  Inst_Frame0_bit20  |LHQD1_11  |     3|
+|15    |  Inst_Frame0_bit21  |LHQD1_12  |     3|
+|16    |  Inst_Frame0_bit22  |LHQD1_13  |     3|
+|17    |  Inst_Frame0_bit23  |LHQD1_14  |     3|
+|18    |  Inst_Frame0_bit24  |LHQD1_15  |     3|
+|19    |  Inst_Frame0_bit3   |LHQD1_16  |     3|
+|20    |  Inst_Frame0_bit4   |LHQD1_17  |     3|
+|21    |  Inst_Frame0_bit5   |LHQD1_18  |     3|
+|22    |  Inst_Frame0_bit6   |LHQD1_19  |     3|
+|23    |  Inst_Frame0_bit7   |LHQD1_20  |     3|
+|24    |  Inst_Frame0_bit8   |LHQD1_21  |     3|
+|25    |  Inst_Frame0_bit9   |LHQD1_22  |     3|
+|26    |  Inst_Frame10_bit0  |LHQD1_23  |     2|
+|27    |  Inst_Frame10_bit1  |LHQD1_24  |     2|
+|28    |  Inst_Frame10_bit10 |LHQD1_25  |     2|
+|29    |  Inst_Frame10_bit11 |LHQD1_26  |     2|
+|30    |  Inst_Frame10_bit12 |LHQD1_27  |     2|
+|31    |  Inst_Frame10_bit13 |LHQD1_28  |     2|
+|32    |  Inst_Frame10_bit14 |LHQD1_29  |     2|
+|33    |  Inst_Frame10_bit15 |LHQD1_30  |     2|
+|34    |  Inst_Frame10_bit16 |LHQD1_31  |     2|
+|35    |  Inst_Frame10_bit17 |LHQD1_32  |     2|
+|36    |  Inst_Frame10_bit18 |LHQD1_33  |     2|
+|37    |  Inst_Frame10_bit19 |LHQD1_34  |     2|
+|38    |  Inst_Frame10_bit2  |LHQD1_35  |     2|
+|39    |  Inst_Frame10_bit20 |LHQD1_36  |     2|
+|40    |  Inst_Frame10_bit21 |LHQD1_37  |     2|
+|41    |  Inst_Frame10_bit22 |LHQD1_38  |     2|
+|42    |  Inst_Frame10_bit23 |LHQD1_39  |     2|
+|43    |  Inst_Frame10_bit24 |LHQD1_40  |     2|
+|44    |  Inst_Frame10_bit25 |LHQD1_41  |     2|
+|45    |  Inst_Frame10_bit26 |LHQD1_42  |     2|
+|46    |  Inst_Frame10_bit27 |LHQD1_43  |     2|
+|47    |  Inst_Frame10_bit28 |LHQD1_44  |     2|
+|48    |  Inst_Frame10_bit29 |LHQD1_45  |     2|
+|49    |  Inst_Frame10_bit3  |LHQD1_46  |     2|
+|50    |  Inst_Frame10_bit30 |LHQD1_47  |     2|
+|51    |  Inst_Frame10_bit31 |LHQD1_48  |     2|
+|52    |  Inst_Frame10_bit4  |LHQD1_49  |     2|
+|53    |  Inst_Frame10_bit5  |LHQD1_50  |     2|
+|54    |  Inst_Frame10_bit6  |LHQD1_51  |     2|
+|55    |  Inst_Frame10_bit7  |LHQD1_52  |     2|
+|56    |  Inst_Frame10_bit8  |LHQD1_53  |     2|
+|57    |  Inst_Frame10_bit9  |LHQD1_54  |     2|
+|58    |  Inst_Frame11_bit0  |LHQD1_55  |     2|
+|59    |  Inst_Frame11_bit1  |LHQD1_56  |     2|
+|60    |  Inst_Frame11_bit10 |LHQD1_57  |     2|
+|61    |  Inst_Frame11_bit11 |LHQD1_58  |     2|
+|62    |  Inst_Frame11_bit12 |LHQD1_59  |     2|
+|63    |  Inst_Frame11_bit13 |LHQD1_60  |     2|
+|64    |  Inst_Frame11_bit14 |LHQD1_61  |     2|
+|65    |  Inst_Frame11_bit15 |LHQD1_62  |     2|
+|66    |  Inst_Frame11_bit16 |LHQD1_63  |     2|
+|67    |  Inst_Frame11_bit17 |LHQD1_64  |     2|
+|68    |  Inst_Frame11_bit18 |LHQD1_65  |     2|
+|69    |  Inst_Frame11_bit19 |LHQD1_66  |     2|
+|70    |  Inst_Frame11_bit2  |LHQD1_67  |     2|
+|71    |  Inst_Frame11_bit20 |LHQD1_68  |     2|
+|72    |  Inst_Frame11_bit21 |LHQD1_69  |     2|
+|73    |  Inst_Frame11_bit22 |LHQD1_70  |     2|
+|74    |  Inst_Frame11_bit23 |LHQD1_71  |     2|
+|75    |  Inst_Frame11_bit24 |LHQD1_72  |     2|
+|76    |  Inst_Frame11_bit25 |LHQD1_73  |     2|
+|77    |  Inst_Frame11_bit26 |LHQD1_74  |     2|
+|78    |  Inst_Frame11_bit27 |LHQD1_75  |     2|
+|79    |  Inst_Frame11_bit28 |LHQD1_76  |     2|
+|80    |  Inst_Frame11_bit29 |LHQD1_77  |     2|
+|81    |  Inst_Frame11_bit3  |LHQD1_78  |     2|
+|82    |  Inst_Frame11_bit30 |LHQD1_79  |     2|
+|83    |  Inst_Frame11_bit31 |LHQD1_80  |     2|
+|84    |  Inst_Frame11_bit4  |LHQD1_81  |     2|
+|85    |  Inst_Frame11_bit5  |LHQD1_82  |     2|
+|86    |  Inst_Frame11_bit6  |LHQD1_83  |     2|
+|87    |  Inst_Frame11_bit7  |LHQD1_84  |     2|
+|88    |  Inst_Frame11_bit8  |LHQD1_85  |     2|
+|89    |  Inst_Frame11_bit9  |LHQD1_86  |     2|
+|90    |  Inst_Frame12_bit0  |LHQD1_87  |     2|
+|91    |  Inst_Frame12_bit1  |LHQD1_88  |     2|
+|92    |  Inst_Frame12_bit10 |LHQD1_89  |     2|
+|93    |  Inst_Frame12_bit11 |LHQD1_90  |     2|
+|94    |  Inst_Frame12_bit12 |LHQD1_91  |     2|
+|95    |  Inst_Frame12_bit13 |LHQD1_92  |     2|
+|96    |  Inst_Frame12_bit14 |LHQD1_93  |     2|
+|97    |  Inst_Frame12_bit15 |LHQD1_94  |     2|
+|98    |  Inst_Frame12_bit16 |LHQD1_95  |     2|
+|99    |  Inst_Frame12_bit17 |LHQD1_96  |     2|
+|100   |  Inst_Frame12_bit18 |LHQD1_97  |     2|
+|101   |  Inst_Frame12_bit19 |LHQD1_98  |     2|
+|102   |  Inst_Frame12_bit2  |LHQD1_99  |     2|
+|103   |  Inst_Frame12_bit20 |LHQD1_100 |     2|
+|104   |  Inst_Frame12_bit21 |LHQD1_101 |     2|
+|105   |  Inst_Frame12_bit22 |LHQD1_102 |     2|
+|106   |  Inst_Frame12_bit23 |LHQD1_103 |     2|
+|107   |  Inst_Frame12_bit24 |LHQD1_104 |     2|
+|108   |  Inst_Frame12_bit25 |LHQD1_105 |     2|
+|109   |  Inst_Frame12_bit26 |LHQD1_106 |     2|
+|110   |  Inst_Frame12_bit27 |LHQD1_107 |     2|
+|111   |  Inst_Frame12_bit28 |LHQD1_108 |     2|
+|112   |  Inst_Frame12_bit29 |LHQD1_109 |     2|
+|113   |  Inst_Frame12_bit3  |LHQD1_110 |     2|
+|114   |  Inst_Frame12_bit30 |LHQD1_111 |     2|
+|115   |  Inst_Frame12_bit31 |LHQD1_112 |     2|
+|116   |  Inst_Frame12_bit4  |LHQD1_113 |     2|
+|117   |  Inst_Frame12_bit5  |LHQD1_114 |     2|
+|118   |  Inst_Frame12_bit6  |LHQD1_115 |     2|
+|119   |  Inst_Frame12_bit7  |LHQD1_116 |     2|
+|120   |  Inst_Frame12_bit8  |LHQD1_117 |     2|
+|121   |  Inst_Frame12_bit9  |LHQD1_118 |     2|
+|122   |  Inst_Frame13_bit0  |LHQD1_119 |     2|
+|123   |  Inst_Frame13_bit1  |LHQD1_120 |     2|
+|124   |  Inst_Frame13_bit10 |LHQD1_121 |     2|
+|125   |  Inst_Frame13_bit11 |LHQD1_122 |     2|
+|126   |  Inst_Frame13_bit12 |LHQD1_123 |     2|
+|127   |  Inst_Frame13_bit13 |LHQD1_124 |     2|
+|128   |  Inst_Frame13_bit14 |LHQD1_125 |     2|
+|129   |  Inst_Frame13_bit15 |LHQD1_126 |     2|
+|130   |  Inst_Frame13_bit16 |LHQD1_127 |     2|
+|131   |  Inst_Frame13_bit17 |LHQD1_128 |     2|
+|132   |  Inst_Frame13_bit18 |LHQD1_129 |     2|
+|133   |  Inst_Frame13_bit19 |LHQD1_130 |     2|
+|134   |  Inst_Frame13_bit2  |LHQD1_131 |     2|
+|135   |  Inst_Frame13_bit20 |LHQD1_132 |     2|
+|136   |  Inst_Frame13_bit21 |LHQD1_133 |     2|
+|137   |  Inst_Frame13_bit22 |LHQD1_134 |     2|
+|138   |  Inst_Frame13_bit23 |LHQD1_135 |     2|
+|139   |  Inst_Frame13_bit24 |LHQD1_136 |     2|
+|140   |  Inst_Frame13_bit25 |LHQD1_137 |     2|
+|141   |  Inst_Frame13_bit26 |LHQD1_138 |     2|
+|142   |  Inst_Frame13_bit27 |LHQD1_139 |     2|
+|143   |  Inst_Frame13_bit28 |LHQD1_140 |     2|
+|144   |  Inst_Frame13_bit29 |LHQD1_141 |     2|
+|145   |  Inst_Frame13_bit3  |LHQD1_142 |     2|
+|146   |  Inst_Frame13_bit30 |LHQD1_143 |     2|
+|147   |  Inst_Frame13_bit31 |LHQD1_144 |     2|
+|148   |  Inst_Frame13_bit4  |LHQD1_145 |     2|
+|149   |  Inst_Frame13_bit5  |LHQD1_146 |     2|
+|150   |  Inst_Frame13_bit6  |LHQD1_147 |     2|
+|151   |  Inst_Frame13_bit7  |LHQD1_148 |     2|
+|152   |  Inst_Frame13_bit8  |LHQD1_149 |     2|
+|153   |  Inst_Frame13_bit9  |LHQD1_150 |     2|
+|154   |  Inst_Frame14_bit0  |LHQD1_151 |     2|
+|155   |  Inst_Frame14_bit1  |LHQD1_152 |     2|
+|156   |  Inst_Frame14_bit10 |LHQD1_153 |     2|
+|157   |  Inst_Frame14_bit11 |LHQD1_154 |     2|
+|158   |  Inst_Frame14_bit12 |LHQD1_155 |     2|
+|159   |  Inst_Frame14_bit13 |LHQD1_156 |     2|
+|160   |  Inst_Frame14_bit14 |LHQD1_157 |     2|
+|161   |  Inst_Frame14_bit15 |LHQD1_158 |     2|
+|162   |  Inst_Frame14_bit16 |LHQD1_159 |     2|
+|163   |  Inst_Frame14_bit17 |LHQD1_160 |     2|
+|164   |  Inst_Frame14_bit18 |LHQD1_161 |     2|
+|165   |  Inst_Frame14_bit19 |LHQD1_162 |     2|
+|166   |  Inst_Frame14_bit2  |LHQD1_163 |     2|
+|167   |  Inst_Frame14_bit20 |LHQD1_164 |     2|
+|168   |  Inst_Frame14_bit21 |LHQD1_165 |     2|
+|169   |  Inst_Frame14_bit22 |LHQD1_166 |     2|
+|170   |  Inst_Frame14_bit23 |LHQD1_167 |     2|
+|171   |  Inst_Frame14_bit24 |LHQD1_168 |     2|
+|172   |  Inst_Frame14_bit25 |LHQD1_169 |     2|
+|173   |  Inst_Frame14_bit26 |LHQD1_170 |     2|
+|174   |  Inst_Frame14_bit27 |LHQD1_171 |     2|
+|175   |  Inst_Frame14_bit28 |LHQD1_172 |     2|
+|176   |  Inst_Frame14_bit29 |LHQD1_173 |     2|
+|177   |  Inst_Frame14_bit3  |LHQD1_174 |     2|
+|178   |  Inst_Frame14_bit30 |LHQD1_175 |     2|
+|179   |  Inst_Frame14_bit31 |LHQD1_176 |     2|
+|180   |  Inst_Frame14_bit4  |LHQD1_177 |     2|
+|181   |  Inst_Frame14_bit5  |LHQD1_178 |     2|
+|182   |  Inst_Frame14_bit6  |LHQD1_179 |     2|
+|183   |  Inst_Frame14_bit7  |LHQD1_180 |     2|
+|184   |  Inst_Frame14_bit8  |LHQD1_181 |     2|
+|185   |  Inst_Frame14_bit9  |LHQD1_182 |     2|
+|186   |  Inst_Frame15_bit0  |LHQD1_183 |     2|
+|187   |  Inst_Frame15_bit1  |LHQD1_184 |     2|
+|188   |  Inst_Frame15_bit10 |LHQD1_185 |     2|
+|189   |  Inst_Frame15_bit11 |LHQD1_186 |     2|
+|190   |  Inst_Frame15_bit12 |LHQD1_187 |     2|
+|191   |  Inst_Frame15_bit13 |LHQD1_188 |     2|
+|192   |  Inst_Frame15_bit14 |LHQD1_189 |     2|
+|193   |  Inst_Frame15_bit15 |LHQD1_190 |     2|
+|194   |  Inst_Frame15_bit16 |LHQD1_191 |     2|
+|195   |  Inst_Frame15_bit17 |LHQD1_192 |     2|
+|196   |  Inst_Frame15_bit18 |LHQD1_193 |     2|
+|197   |  Inst_Frame15_bit19 |LHQD1_194 |     2|
+|198   |  Inst_Frame15_bit2  |LHQD1_195 |     2|
+|199   |  Inst_Frame15_bit20 |LHQD1_196 |     2|
+|200   |  Inst_Frame15_bit21 |LHQD1_197 |     2|
+|201   |  Inst_Frame15_bit22 |LHQD1_198 |     2|
+|202   |  Inst_Frame15_bit23 |LHQD1_199 |     2|
+|203   |  Inst_Frame15_bit24 |LHQD1_200 |     2|
+|204   |  Inst_Frame15_bit25 |LHQD1_201 |     2|
+|205   |  Inst_Frame15_bit26 |LHQD1_202 |     2|
+|206   |  Inst_Frame15_bit27 |LHQD1_203 |     2|
+|207   |  Inst_Frame15_bit28 |LHQD1_204 |     2|
+|208   |  Inst_Frame15_bit29 |LHQD1_205 |     2|
+|209   |  Inst_Frame15_bit3  |LHQD1_206 |     2|
+|210   |  Inst_Frame15_bit30 |LHQD1_207 |     2|
+|211   |  Inst_Frame15_bit31 |LHQD1_208 |     2|
+|212   |  Inst_Frame15_bit4  |LHQD1_209 |     2|
+|213   |  Inst_Frame15_bit5  |LHQD1_210 |     2|
+|214   |  Inst_Frame15_bit6  |LHQD1_211 |     2|
+|215   |  Inst_Frame15_bit7  |LHQD1_212 |     2|
+|216   |  Inst_Frame15_bit8  |LHQD1_213 |     2|
+|217   |  Inst_Frame15_bit9  |LHQD1_214 |     2|
+|218   |  Inst_Frame16_bit0  |LHQD1_215 |     2|
+|219   |  Inst_Frame16_bit1  |LHQD1_216 |     2|
+|220   |  Inst_Frame16_bit10 |LHQD1_217 |     2|
+|221   |  Inst_Frame16_bit11 |LHQD1_218 |     2|
+|222   |  Inst_Frame16_bit12 |LHQD1_219 |     2|
+|223   |  Inst_Frame16_bit13 |LHQD1_220 |     2|
+|224   |  Inst_Frame16_bit14 |LHQD1_221 |     2|
+|225   |  Inst_Frame16_bit15 |LHQD1_222 |     2|
+|226   |  Inst_Frame16_bit16 |LHQD1_223 |     2|
+|227   |  Inst_Frame16_bit17 |LHQD1_224 |     2|
+|228   |  Inst_Frame16_bit18 |LHQD1_225 |     2|
+|229   |  Inst_Frame16_bit19 |LHQD1_226 |     2|
+|230   |  Inst_Frame16_bit2  |LHQD1_227 |     2|
+|231   |  Inst_Frame16_bit20 |LHQD1_228 |     2|
+|232   |  Inst_Frame16_bit21 |LHQD1_229 |     2|
+|233   |  Inst_Frame16_bit22 |LHQD1_230 |     2|
+|234   |  Inst_Frame16_bit23 |LHQD1_231 |     2|
+|235   |  Inst_Frame16_bit24 |LHQD1_232 |     2|
+|236   |  Inst_Frame16_bit25 |LHQD1_233 |     2|
+|237   |  Inst_Frame16_bit26 |LHQD1_234 |     2|
+|238   |  Inst_Frame16_bit27 |LHQD1_235 |     2|
+|239   |  Inst_Frame16_bit28 |LHQD1_236 |     2|
+|240   |  Inst_Frame16_bit29 |LHQD1_237 |     2|
+|241   |  Inst_Frame16_bit3  |LHQD1_238 |     2|
+|242   |  Inst_Frame16_bit30 |LHQD1_239 |     2|
+|243   |  Inst_Frame16_bit31 |LHQD1_240 |     2|
+|244   |  Inst_Frame16_bit4  |LHQD1_241 |     2|
+|245   |  Inst_Frame16_bit5  |LHQD1_242 |     2|
+|246   |  Inst_Frame16_bit6  |LHQD1_243 |     2|
+|247   |  Inst_Frame16_bit7  |LHQD1_244 |     2|
+|248   |  Inst_Frame16_bit8  |LHQD1_245 |     2|
+|249   |  Inst_Frame16_bit9  |LHQD1_246 |     2|
+|250   |  Inst_Frame17_bit0  |LHQD1_247 |     2|
+|251   |  Inst_Frame17_bit1  |LHQD1_248 |     2|
+|252   |  Inst_Frame17_bit10 |LHQD1_249 |     2|
+|253   |  Inst_Frame17_bit11 |LHQD1_250 |     2|
+|254   |  Inst_Frame17_bit12 |LHQD1_251 |     2|
+|255   |  Inst_Frame17_bit13 |LHQD1_252 |     2|
+|256   |  Inst_Frame17_bit14 |LHQD1_253 |     2|
+|257   |  Inst_Frame17_bit15 |LHQD1_254 |     2|
+|258   |  Inst_Frame17_bit16 |LHQD1_255 |     2|
+|259   |  Inst_Frame17_bit17 |LHQD1_256 |     2|
+|260   |  Inst_Frame17_bit18 |LHQD1_257 |     2|
+|261   |  Inst_Frame17_bit19 |LHQD1_258 |     2|
+|262   |  Inst_Frame17_bit2  |LHQD1_259 |     2|
+|263   |  Inst_Frame17_bit20 |LHQD1_260 |     2|
+|264   |  Inst_Frame17_bit21 |LHQD1_261 |     2|
+|265   |  Inst_Frame17_bit22 |LHQD1_262 |     2|
+|266   |  Inst_Frame17_bit23 |LHQD1_263 |     2|
+|267   |  Inst_Frame17_bit24 |LHQD1_264 |     2|
+|268   |  Inst_Frame17_bit25 |LHQD1_265 |     2|
+|269   |  Inst_Frame17_bit26 |LHQD1_266 |     2|
+|270   |  Inst_Frame17_bit27 |LHQD1_267 |     2|
+|271   |  Inst_Frame17_bit28 |LHQD1_268 |     2|
+|272   |  Inst_Frame17_bit29 |LHQD1_269 |     2|
+|273   |  Inst_Frame17_bit3  |LHQD1_270 |     2|
+|274   |  Inst_Frame17_bit30 |LHQD1_271 |     2|
+|275   |  Inst_Frame17_bit31 |LHQD1_272 |     2|
+|276   |  Inst_Frame17_bit4  |LHQD1_273 |     2|
+|277   |  Inst_Frame17_bit5  |LHQD1_274 |     2|
+|278   |  Inst_Frame17_bit6  |LHQD1_275 |     2|
+|279   |  Inst_Frame17_bit7  |LHQD1_276 |     2|
+|280   |  Inst_Frame17_bit8  |LHQD1_277 |     2|
+|281   |  Inst_Frame17_bit9  |LHQD1_278 |     2|
+|282   |  Inst_Frame18_bit0  |LHQD1_279 |     2|
+|283   |  Inst_Frame18_bit1  |LHQD1_280 |     2|
+|284   |  Inst_Frame18_bit10 |LHQD1_281 |     2|
+|285   |  Inst_Frame18_bit11 |LHQD1_282 |     2|
+|286   |  Inst_Frame18_bit12 |LHQD1_283 |     2|
+|287   |  Inst_Frame18_bit13 |LHQD1_284 |     2|
+|288   |  Inst_Frame18_bit14 |LHQD1_285 |     2|
+|289   |  Inst_Frame18_bit15 |LHQD1_286 |     2|
+|290   |  Inst_Frame18_bit16 |LHQD1_287 |     2|
+|291   |  Inst_Frame18_bit17 |LHQD1_288 |     2|
+|292   |  Inst_Frame18_bit18 |LHQD1_289 |     2|
+|293   |  Inst_Frame18_bit19 |LHQD1_290 |     2|
+|294   |  Inst_Frame18_bit2  |LHQD1_291 |     2|
+|295   |  Inst_Frame18_bit20 |LHQD1_292 |     2|
+|296   |  Inst_Frame18_bit21 |LHQD1_293 |     2|
+|297   |  Inst_Frame18_bit22 |LHQD1_294 |     2|
+|298   |  Inst_Frame18_bit23 |LHQD1_295 |     2|
+|299   |  Inst_Frame18_bit24 |LHQD1_296 |     2|
+|300   |  Inst_Frame18_bit25 |LHQD1_297 |     2|
+|301   |  Inst_Frame18_bit26 |LHQD1_298 |     2|
+|302   |  Inst_Frame18_bit27 |LHQD1_299 |     2|
+|303   |  Inst_Frame18_bit28 |LHQD1_300 |     2|
+|304   |  Inst_Frame18_bit29 |LHQD1_301 |     2|
+|305   |  Inst_Frame18_bit3  |LHQD1_302 |     2|
+|306   |  Inst_Frame18_bit30 |LHQD1_303 |     2|
+|307   |  Inst_Frame18_bit31 |LHQD1_304 |     2|
+|308   |  Inst_Frame18_bit4  |LHQD1_305 |     2|
+|309   |  Inst_Frame18_bit5  |LHQD1_306 |     2|
+|310   |  Inst_Frame18_bit6  |LHQD1_307 |     2|
+|311   |  Inst_Frame18_bit7  |LHQD1_308 |     2|
+|312   |  Inst_Frame18_bit8  |LHQD1_309 |     2|
+|313   |  Inst_Frame18_bit9  |LHQD1_310 |     2|
+|314   |  Inst_Frame19_bit10 |LHQD1_311 |     2|
+|315   |  Inst_Frame19_bit11 |LHQD1_312 |     2|
+|316   |  Inst_Frame19_bit12 |LHQD1_313 |     2|
+|317   |  Inst_Frame19_bit13 |LHQD1_314 |     2|
+|318   |  Inst_Frame19_bit14 |LHQD1_315 |     2|
+|319   |  Inst_Frame19_bit15 |LHQD1_316 |     2|
+|320   |  Inst_Frame19_bit16 |LHQD1_317 |     2|
+|321   |  Inst_Frame19_bit17 |LHQD1_318 |     2|
+|322   |  Inst_Frame19_bit18 |LHQD1_319 |     2|
+|323   |  Inst_Frame19_bit19 |LHQD1_320 |     2|
+|324   |  Inst_Frame19_bit2  |LHQD1_321 |     2|
+|325   |  Inst_Frame19_bit20 |LHQD1_322 |     2|
+|326   |  Inst_Frame19_bit21 |LHQD1_323 |     2|
+|327   |  Inst_Frame19_bit22 |LHQD1_324 |     2|
+|328   |  Inst_Frame19_bit23 |LHQD1_325 |     2|
+|329   |  Inst_Frame19_bit24 |LHQD1_326 |     2|
+|330   |  Inst_Frame19_bit25 |LHQD1_327 |     2|
+|331   |  Inst_Frame19_bit3  |LHQD1_328 |     2|
+|332   |  Inst_Frame19_bit4  |LHQD1_329 |     2|
+|333   |  Inst_Frame19_bit5  |LHQD1_330 |     2|
+|334   |  Inst_Frame19_bit6  |LHQD1_331 |     2|
+|335   |  Inst_Frame19_bit7  |LHQD1_332 |     2|
+|336   |  Inst_Frame19_bit8  |LHQD1_333 |     2|
+|337   |  Inst_Frame19_bit9  |LHQD1_334 |     2|
+|338   |  Inst_Frame1_bit10  |LHQD1_335 |     2|
+|339   |  Inst_Frame1_bit11  |LHQD1_336 |     2|
+|340   |  Inst_Frame1_bit12  |LHQD1_337 |     2|
+|341   |  Inst_Frame1_bit13  |LHQD1_338 |     2|
+|342   |  Inst_Frame1_bit14  |LHQD1_339 |     2|
+|343   |  Inst_Frame1_bit15  |LHQD1_340 |     2|
+|344   |  Inst_Frame1_bit16  |LHQD1_341 |     2|
+|345   |  Inst_Frame1_bit17  |LHQD1_342 |     2|
+|346   |  Inst_Frame1_bit18  |LHQD1_343 |     2|
+|347   |  Inst_Frame1_bit19  |LHQD1_344 |     2|
+|348   |  Inst_Frame1_bit2   |LHQD1_345 |     3|
+|349   |  Inst_Frame1_bit20  |LHQD1_346 |     2|
+|350   |  Inst_Frame1_bit21  |LHQD1_347 |     2|
+|351   |  Inst_Frame1_bit22  |LHQD1_348 |     2|
+|352   |  Inst_Frame1_bit23  |LHQD1_349 |     2|
+|353   |  Inst_Frame1_bit24  |LHQD1_350 |     2|
+|354   |  Inst_Frame1_bit25  |LHQD1_351 |     3|
+|355   |  Inst_Frame1_bit26  |LHQD1_352 |     3|
+|356   |  Inst_Frame1_bit27  |LHQD1_353 |     3|
+|357   |  Inst_Frame1_bit28  |LHQD1_354 |     3|
+|358   |  Inst_Frame1_bit29  |LHQD1_355 |     3|
+|359   |  Inst_Frame1_bit3   |LHQD1_356 |     2|
+|360   |  Inst_Frame1_bit30  |LHQD1_357 |     3|
+|361   |  Inst_Frame1_bit31  |LHQD1_358 |     3|
+|362   |  Inst_Frame1_bit4   |LHQD1_359 |     2|
+|363   |  Inst_Frame1_bit5   |LHQD1_360 |     2|
+|364   |  Inst_Frame1_bit7   |LHQD1_361 |     2|
+|365   |  Inst_Frame1_bit8   |LHQD1_362 |     2|
+|366   |  Inst_Frame1_bit9   |LHQD1_363 |     2|
+|367   |  Inst_Frame2_bit1   |LHQD1_364 |     2|
+|368   |  Inst_Frame2_bit10  |LHQD1_365 |     2|
+|369   |  Inst_Frame2_bit11  |LHQD1_366 |     2|
+|370   |  Inst_Frame2_bit12  |LHQD1_367 |     2|
+|371   |  Inst_Frame2_bit13  |LHQD1_368 |     2|
+|372   |  Inst_Frame2_bit14  |LHQD1_369 |     2|
+|373   |  Inst_Frame2_bit15  |LHQD1_370 |     2|
+|374   |  Inst_Frame2_bit16  |LHQD1_371 |     2|
+|375   |  Inst_Frame2_bit17  |LHQD1_372 |     2|
+|376   |  Inst_Frame2_bit18  |LHQD1_373 |     2|
+|377   |  Inst_Frame2_bit19  |LHQD1_374 |     2|
+|378   |  Inst_Frame2_bit20  |LHQD1_375 |     2|
+|379   |  Inst_Frame2_bit21  |LHQD1_376 |     2|
+|380   |  Inst_Frame2_bit22  |LHQD1_377 |     2|
+|381   |  Inst_Frame2_bit23  |LHQD1_378 |     2|
+|382   |  Inst_Frame2_bit24  |LHQD1_379 |     2|
+|383   |  Inst_Frame2_bit25  |LHQD1_380 |     2|
+|384   |  Inst_Frame2_bit26  |LHQD1_381 |     2|
+|385   |  Inst_Frame2_bit27  |LHQD1_382 |     2|
+|386   |  Inst_Frame2_bit28  |LHQD1_383 |     2|
+|387   |  Inst_Frame2_bit30  |LHQD1_384 |     2|
+|388   |  Inst_Frame2_bit31  |LHQD1_385 |     2|
+|389   |  Inst_Frame2_bit4   |LHQD1_386 |     2|
+|390   |  Inst_Frame2_bit5   |LHQD1_387 |     2|
+|391   |  Inst_Frame2_bit6   |LHQD1_388 |     2|
+|392   |  Inst_Frame2_bit7   |LHQD1_389 |     2|
+|393   |  Inst_Frame2_bit8   |LHQD1_390 |     2|
+|394   |  Inst_Frame2_bit9   |LHQD1_391 |     2|
+|395   |  Inst_Frame3_bit1   |LHQD1_392 |     2|
+|396   |  Inst_Frame3_bit10  |LHQD1_393 |     2|
+|397   |  Inst_Frame3_bit11  |LHQD1_394 |     2|
+|398   |  Inst_Frame3_bit12  |LHQD1_395 |     2|
+|399   |  Inst_Frame3_bit13  |LHQD1_396 |     2|
+|400   |  Inst_Frame3_bit14  |LHQD1_397 |     2|
+|401   |  Inst_Frame3_bit15  |LHQD1_398 |     2|
+|402   |  Inst_Frame3_bit16  |LHQD1_399 |     2|
+|403   |  Inst_Frame3_bit17  |LHQD1_400 |     2|
+|404   |  Inst_Frame3_bit18  |LHQD1_401 |     2|
+|405   |  Inst_Frame3_bit19  |LHQD1_402 |     2|
+|406   |  Inst_Frame3_bit2   |LHQD1_403 |     2|
+|407   |  Inst_Frame3_bit20  |LHQD1_404 |     2|
+|408   |  Inst_Frame3_bit21  |LHQD1_405 |     2|
+|409   |  Inst_Frame3_bit22  |LHQD1_406 |     2|
+|410   |  Inst_Frame3_bit23  |LHQD1_407 |     2|
+|411   |  Inst_Frame3_bit24  |LHQD1_408 |     2|
+|412   |  Inst_Frame3_bit25  |LHQD1_409 |     2|
+|413   |  Inst_Frame3_bit26  |LHQD1_410 |     2|
+|414   |  Inst_Frame3_bit27  |LHQD1_411 |     2|
+|415   |  Inst_Frame3_bit28  |LHQD1_412 |     2|
+|416   |  Inst_Frame3_bit29  |LHQD1_413 |     2|
+|417   |  Inst_Frame3_bit3   |LHQD1_414 |     2|
+|418   |  Inst_Frame3_bit30  |LHQD1_415 |     2|
+|419   |  Inst_Frame3_bit31  |LHQD1_416 |     2|
+|420   |  Inst_Frame3_bit4   |LHQD1_417 |     2|
+|421   |  Inst_Frame3_bit5   |LHQD1_418 |     2|
+|422   |  Inst_Frame3_bit6   |LHQD1_419 |     2|
+|423   |  Inst_Frame3_bit7   |LHQD1_420 |     2|
+|424   |  Inst_Frame3_bit8   |LHQD1_421 |     2|
+|425   |  Inst_Frame3_bit9   |LHQD1_422 |     2|
+|426   |  Inst_Frame4_bit0   |LHQD1_423 |     2|
+|427   |  Inst_Frame4_bit1   |LHQD1_424 |     2|
+|428   |  Inst_Frame4_bit10  |LHQD1_425 |     2|
+|429   |  Inst_Frame4_bit11  |LHQD1_426 |     2|
+|430   |  Inst_Frame4_bit12  |LHQD1_427 |     2|
+|431   |  Inst_Frame4_bit13  |LHQD1_428 |     2|
+|432   |  Inst_Frame4_bit14  |LHQD1_429 |     2|
+|433   |  Inst_Frame4_bit15  |LHQD1_430 |     2|
+|434   |  Inst_Frame4_bit16  |LHQD1_431 |     2|
+|435   |  Inst_Frame4_bit17  |LHQD1_432 |     2|
+|436   |  Inst_Frame4_bit18  |LHQD1_433 |     2|
+|437   |  Inst_Frame4_bit19  |LHQD1_434 |     2|
+|438   |  Inst_Frame4_bit2   |LHQD1_435 |     2|
+|439   |  Inst_Frame4_bit20  |LHQD1_436 |     2|
+|440   |  Inst_Frame4_bit21  |LHQD1_437 |     2|
+|441   |  Inst_Frame4_bit22  |LHQD1_438 |     2|
+|442   |  Inst_Frame4_bit23  |LHQD1_439 |     2|
+|443   |  Inst_Frame4_bit24  |LHQD1_440 |     2|
+|444   |  Inst_Frame4_bit25  |LHQD1_441 |     2|
+|445   |  Inst_Frame4_bit26  |LHQD1_442 |     2|
+|446   |  Inst_Frame4_bit27  |LHQD1_443 |     2|
+|447   |  Inst_Frame4_bit28  |LHQD1_444 |     2|
+|448   |  Inst_Frame4_bit29  |LHQD1_445 |     2|
+|449   |  Inst_Frame4_bit3   |LHQD1_446 |     2|
+|450   |  Inst_Frame4_bit30  |LHQD1_447 |     2|
+|451   |  Inst_Frame4_bit31  |LHQD1_448 |     2|
+|452   |  Inst_Frame4_bit4   |LHQD1_449 |     2|
+|453   |  Inst_Frame4_bit5   |LHQD1_450 |     2|
+|454   |  Inst_Frame4_bit6   |LHQD1_451 |     2|
+|455   |  Inst_Frame4_bit7   |LHQD1_452 |     2|
+|456   |  Inst_Frame4_bit8   |LHQD1_453 |     2|
+|457   |  Inst_Frame4_bit9   |LHQD1_454 |     2|
+|458   |  Inst_Frame5_bit0   |LHQD1_455 |     2|
+|459   |  Inst_Frame5_bit1   |LHQD1_456 |     2|
+|460   |  Inst_Frame5_bit10  |LHQD1_457 |     2|
+|461   |  Inst_Frame5_bit11  |LHQD1_458 |     2|
+|462   |  Inst_Frame5_bit12  |LHQD1_459 |     2|
+|463   |  Inst_Frame5_bit13  |LHQD1_460 |     2|
+|464   |  Inst_Frame5_bit14  |LHQD1_461 |     2|
+|465   |  Inst_Frame5_bit15  |LHQD1_462 |     2|
+|466   |  Inst_Frame5_bit16  |LHQD1_463 |     2|
+|467   |  Inst_Frame5_bit17  |LHQD1_464 |     2|
+|468   |  Inst_Frame5_bit18  |LHQD1_465 |     2|
+|469   |  Inst_Frame5_bit19  |LHQD1_466 |     2|
+|470   |  Inst_Frame5_bit2   |LHQD1_467 |     2|
+|471   |  Inst_Frame5_bit20  |LHQD1_468 |     2|
+|472   |  Inst_Frame5_bit21  |LHQD1_469 |     2|
+|473   |  Inst_Frame5_bit22  |LHQD1_470 |     2|
+|474   |  Inst_Frame5_bit23  |LHQD1_471 |     2|
+|475   |  Inst_Frame5_bit24  |LHQD1_472 |     2|
+|476   |  Inst_Frame5_bit25  |LHQD1_473 |     2|
+|477   |  Inst_Frame5_bit26  |LHQD1_474 |     2|
+|478   |  Inst_Frame5_bit27  |LHQD1_475 |     2|
+|479   |  Inst_Frame5_bit28  |LHQD1_476 |     2|
+|480   |  Inst_Frame5_bit29  |LHQD1_477 |     2|
+|481   |  Inst_Frame5_bit3   |LHQD1_478 |     2|
+|482   |  Inst_Frame5_bit30  |LHQD1_479 |     2|
+|483   |  Inst_Frame5_bit31  |LHQD1_480 |     2|
+|484   |  Inst_Frame5_bit4   |LHQD1_481 |     2|
+|485   |  Inst_Frame5_bit5   |LHQD1_482 |     2|
+|486   |  Inst_Frame5_bit6   |LHQD1_483 |     2|
+|487   |  Inst_Frame5_bit7   |LHQD1_484 |     2|
+|488   |  Inst_Frame5_bit8   |LHQD1_485 |     2|
+|489   |  Inst_Frame5_bit9   |LHQD1_486 |     2|
+|490   |  Inst_Frame6_bit0   |LHQD1_487 |     2|
+|491   |  Inst_Frame6_bit1   |LHQD1_488 |     2|
+|492   |  Inst_Frame6_bit10  |LHQD1_489 |     2|
+|493   |  Inst_Frame6_bit11  |LHQD1_490 |     2|
+|494   |  Inst_Frame6_bit12  |LHQD1_491 |     2|
+|495   |  Inst_Frame6_bit13  |LHQD1_492 |     2|
+|496   |  Inst_Frame6_bit14  |LHQD1_493 |     2|
+|497   |  Inst_Frame6_bit15  |LHQD1_494 |     2|
+|498   |  Inst_Frame6_bit16  |LHQD1_495 |     2|
+|499   |  Inst_Frame6_bit17  |LHQD1_496 |     2|
+|500   |  Inst_Frame6_bit18  |LHQD1_497 |     2|
+|501   |  Inst_Frame6_bit19  |LHQD1_498 |     2|
+|502   |  Inst_Frame6_bit2   |LHQD1_499 |     2|
+|503   |  Inst_Frame6_bit20  |LHQD1_500 |     2|
+|504   |  Inst_Frame6_bit21  |LHQD1_501 |     2|
+|505   |  Inst_Frame6_bit22  |LHQD1_502 |     2|
+|506   |  Inst_Frame6_bit23  |LHQD1_503 |     2|
+|507   |  Inst_Frame6_bit24  |LHQD1_504 |     2|
+|508   |  Inst_Frame6_bit25  |LHQD1_505 |     2|
+|509   |  Inst_Frame6_bit26  |LHQD1_506 |     2|
+|510   |  Inst_Frame6_bit27  |LHQD1_507 |     2|
+|511   |  Inst_Frame6_bit28  |LHQD1_508 |     2|
+|512   |  Inst_Frame6_bit29  |LHQD1_509 |     2|
+|513   |  Inst_Frame6_bit3   |LHQD1_510 |     2|
+|514   |  Inst_Frame6_bit30  |LHQD1_511 |     2|
+|515   |  Inst_Frame6_bit31  |LHQD1_512 |     2|
+|516   |  Inst_Frame6_bit4   |LHQD1_513 |     2|
+|517   |  Inst_Frame6_bit5   |LHQD1_514 |     2|
+|518   |  Inst_Frame6_bit6   |LHQD1_515 |     2|
+|519   |  Inst_Frame6_bit7   |LHQD1_516 |     2|
+|520   |  Inst_Frame6_bit8   |LHQD1_517 |     2|
+|521   |  Inst_Frame6_bit9   |LHQD1_518 |     2|
+|522   |  Inst_Frame7_bit0   |LHQD1_519 |     2|
+|523   |  Inst_Frame7_bit1   |LHQD1_520 |     2|
+|524   |  Inst_Frame7_bit10  |LHQD1_521 |     2|
+|525   |  Inst_Frame7_bit11  |LHQD1_522 |     2|
+|526   |  Inst_Frame7_bit12  |LHQD1_523 |     2|
+|527   |  Inst_Frame7_bit13  |LHQD1_524 |     2|
+|528   |  Inst_Frame7_bit14  |LHQD1_525 |     2|
+|529   |  Inst_Frame7_bit15  |LHQD1_526 |     2|
+|530   |  Inst_Frame7_bit16  |LHQD1_527 |     2|
+|531   |  Inst_Frame7_bit17  |LHQD1_528 |     2|
+|532   |  Inst_Frame7_bit18  |LHQD1_529 |     2|
+|533   |  Inst_Frame7_bit19  |LHQD1_530 |     2|
+|534   |  Inst_Frame7_bit2   |LHQD1_531 |     2|
+|535   |  Inst_Frame7_bit20  |LHQD1_532 |     2|
+|536   |  Inst_Frame7_bit21  |LHQD1_533 |     2|
+|537   |  Inst_Frame7_bit22  |LHQD1_534 |     2|
+|538   |  Inst_Frame7_bit23  |LHQD1_535 |     2|
+|539   |  Inst_Frame7_bit24  |LHQD1_536 |     2|
+|540   |  Inst_Frame7_bit25  |LHQD1_537 |     2|
+|541   |  Inst_Frame7_bit26  |LHQD1_538 |     2|
+|542   |  Inst_Frame7_bit27  |LHQD1_539 |     2|
+|543   |  Inst_Frame7_bit28  |LHQD1_540 |     2|
+|544   |  Inst_Frame7_bit29  |LHQD1_541 |     2|
+|545   |  Inst_Frame7_bit3   |LHQD1_542 |     2|
+|546   |  Inst_Frame7_bit30  |LHQD1_543 |     2|
+|547   |  Inst_Frame7_bit31  |LHQD1_544 |     2|
+|548   |  Inst_Frame7_bit4   |LHQD1_545 |     2|
+|549   |  Inst_Frame7_bit5   |LHQD1_546 |     2|
+|550   |  Inst_Frame7_bit6   |LHQD1_547 |     2|
+|551   |  Inst_Frame7_bit7   |LHQD1_548 |     2|
+|552   |  Inst_Frame7_bit8   |LHQD1_549 |     2|
+|553   |  Inst_Frame7_bit9   |LHQD1_550 |     2|
+|554   |  Inst_Frame8_bit0   |LHQD1_551 |     2|
+|555   |  Inst_Frame8_bit1   |LHQD1_552 |     2|
+|556   |  Inst_Frame8_bit10  |LHQD1_553 |     2|
+|557   |  Inst_Frame8_bit11  |LHQD1_554 |     2|
+|558   |  Inst_Frame8_bit12  |LHQD1_555 |     2|
+|559   |  Inst_Frame8_bit13  |LHQD1_556 |     2|
+|560   |  Inst_Frame8_bit14  |LHQD1_557 |     2|
+|561   |  Inst_Frame8_bit15  |LHQD1_558 |     2|
+|562   |  Inst_Frame8_bit16  |LHQD1_559 |     2|
+|563   |  Inst_Frame8_bit17  |LHQD1_560 |     2|
+|564   |  Inst_Frame8_bit18  |LHQD1_561 |     2|
+|565   |  Inst_Frame8_bit19  |LHQD1_562 |     2|
+|566   |  Inst_Frame8_bit2   |LHQD1_563 |     2|
+|567   |  Inst_Frame8_bit20  |LHQD1_564 |     2|
+|568   |  Inst_Frame8_bit21  |LHQD1_565 |     2|
+|569   |  Inst_Frame8_bit22  |LHQD1_566 |     2|
+|570   |  Inst_Frame8_bit23  |LHQD1_567 |     2|
+|571   |  Inst_Frame8_bit24  |LHQD1_568 |     2|
+|572   |  Inst_Frame8_bit25  |LHQD1_569 |     2|
+|573   |  Inst_Frame8_bit26  |LHQD1_570 |     2|
+|574   |  Inst_Frame8_bit27  |LHQD1_571 |     2|
+|575   |  Inst_Frame8_bit28  |LHQD1_572 |     2|
+|576   |  Inst_Frame8_bit29  |LHQD1_573 |     2|
+|577   |  Inst_Frame8_bit3   |LHQD1_574 |     2|
+|578   |  Inst_Frame8_bit30  |LHQD1_575 |     2|
+|579   |  Inst_Frame8_bit31  |LHQD1_576 |     2|
+|580   |  Inst_Frame8_bit4   |LHQD1_577 |     2|
+|581   |  Inst_Frame8_bit5   |LHQD1_578 |     2|
+|582   |  Inst_Frame8_bit6   |LHQD1_579 |     2|
+|583   |  Inst_Frame8_bit7   |LHQD1_580 |     2|
+|584   |  Inst_Frame8_bit8   |LHQD1_581 |     2|
+|585   |  Inst_Frame8_bit9   |LHQD1_582 |     2|
+|586   |  Inst_Frame9_bit0   |LHQD1_583 |     2|
+|587   |  Inst_Frame9_bit1   |LHQD1_584 |     2|
+|588   |  Inst_Frame9_bit10  |LHQD1_585 |     2|
+|589   |  Inst_Frame9_bit11  |LHQD1_586 |     2|
+|590   |  Inst_Frame9_bit12  |LHQD1_587 |     2|
+|591   |  Inst_Frame9_bit13  |LHQD1_588 |     2|
+|592   |  Inst_Frame9_bit14  |LHQD1_589 |     2|
+|593   |  Inst_Frame9_bit15  |LHQD1_590 |     2|
+|594   |  Inst_Frame9_bit16  |LHQD1_591 |     2|
+|595   |  Inst_Frame9_bit17  |LHQD1_592 |     2|
+|596   |  Inst_Frame9_bit18  |LHQD1_593 |     2|
+|597   |  Inst_Frame9_bit19  |LHQD1_594 |     2|
+|598   |  Inst_Frame9_bit2   |LHQD1_595 |     2|
+|599   |  Inst_Frame9_bit20  |LHQD1_596 |     2|
+|600   |  Inst_Frame9_bit21  |LHQD1_597 |     2|
+|601   |  Inst_Frame9_bit22  |LHQD1_598 |     2|
+|602   |  Inst_Frame9_bit23  |LHQD1_599 |     2|
+|603   |  Inst_Frame9_bit24  |LHQD1_600 |     2|
+|604   |  Inst_Frame9_bit25  |LHQD1_601 |     2|
+|605   |  Inst_Frame9_bit26  |LHQD1_602 |     2|
+|606   |  Inst_Frame9_bit27  |LHQD1_603 |     2|
+|607   |  Inst_Frame9_bit28  |LHQD1_604 |     2|
+|608   |  Inst_Frame9_bit29  |LHQD1_605 |     2|
+|609   |  Inst_Frame9_bit3   |LHQD1_606 |     2|
+|610   |  Inst_Frame9_bit30  |LHQD1_607 |     2|
+|611   |  Inst_Frame9_bit31  |LHQD1_608 |     2|
+|612   |  Inst_Frame9_bit4   |LHQD1_609 |     2|
+|613   |  Inst_Frame9_bit5   |LHQD1_610 |     2|
+|614   |  Inst_Frame9_bit6   |LHQD1_611 |     2|
+|615   |  Inst_Frame9_bit7   |LHQD1_612 |     2|
+|616   |  Inst_Frame9_bit8   |LHQD1_613 |     2|
+|617   |  Inst_Frame9_bit9   |LHQD1_614 |     2|
++------+---------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1688 ; free virtual = 116313
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.387 ; gain = 431.957 ; free physical = 1689 ; free virtual = 116314
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.395 ; gain = 431.957 ; free physical = 1689 ; free virtual = 116314
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1284 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1232 instances were transformed.
+  LD => LDCE: 1232 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 1750.316 ; gain = 547.891 ; free physical = 1624 ; free virtual = 116249
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.runs/synth_1/LUT4AB_ConfigMem.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LUT4AB_ConfigMem_utilization_synth.rpt -pb LUT4AB_ConfigMem_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.41 . Memory (MB): peak = 1774.328 ; gain = 0.000 ; free physical = 1624 ; free virtual = 116249
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 15:20:44 2022...

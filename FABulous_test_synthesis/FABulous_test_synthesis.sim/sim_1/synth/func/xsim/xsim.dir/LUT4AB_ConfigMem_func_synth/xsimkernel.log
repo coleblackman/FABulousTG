@@ -1,0 +1,4 @@
+Running: xsim.dir/LUT4AB_ConfigMem_func_synth/xsimk -simmode gui -wdb LUT4AB_ConfigMem_func_synth.wdb -simrunnum 0 -socket 44949
+Design successfully loaded
+Design Loading Memory Usage: 58816 KB (Peak: 58948 KB)
+Design Loading CPU Usage: 50 ms

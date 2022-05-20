@@ -1,0 +1,267 @@
+
+*** Running vivado
+    with args -log LUT4AB_ConfigMem.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source LUT4AB_ConfigMem.tcl -notrace
+
+
+****** Vivado v2018.2.2 (64-bit)
+  **** SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+  **** IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/opt/Xilinx/Vivado/2018.2/scripts/Vivado_init.tcl'
+80 Beta devices matching pattern found, 0 enabled.
+source LUT4AB_ConfigMem.tcl -notrace
+Command: link_design -top LUT4AB_ConfigMem -part xc7vx690tffg1157-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.2
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1647.875 ; gain = 440.953 ; free physical = 1660 ; free virtual = 116284
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.80 . Memory (MB): peak = 1739.910 ; gain = 82.031 ; free physical = 1652 ; free virtual = 116276
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2409.215 ; gain = 669.305 ; free physical = 1066 ; free virtual = 115691
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1050 ; free virtual = 115675
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1046 ; free virtual = 115671
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1059 ; free virtual = 115685
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1052 ; free virtual = 115677
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1048 ; free virtual = 115673
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1046 ; free virtual = 115671
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1045 ; free virtual = 115670
+Ending Logic Optimization Task | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1054 ; free virtual = 115680
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1059 ; free virtual = 115685
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: cd3c29c5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.215 ; gain = 0.000 ; free physical = 1058 ; free virtual = 115684
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.215 ; gain = 761.340 ; free physical = 1058 ; free virtual = 115684
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.runs/impl_1/LUT4AB_ConfigMem_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file LUT4AB_ConfigMem_drc_opted.rpt -pb LUT4AB_ConfigMem_drc_opted.pb -rpx LUT4AB_ConfigMem_drc_opted.rpx
+Command: report_drc -file LUT4AB_ConfigMem_drc_opted.rpt -pb LUT4AB_ConfigMem_drc_opted.pb -rpx LUT4AB_ConfigMem_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.runs/impl_1/LUT4AB_ConfigMem_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2473.246 ; gain = 0.000 ; free physical = 998 ; free virtual = 115626
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 39a4834e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2473.246 ; gain = 0.000 ; free physical = 998 ; free virtual = 115626
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2473.246 ; gain = 0.000 ; free physical = 998 ; free virtual = 115625
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 1284 I/O ports
+ while the target  device: 7vx690t package: ffg1157, contains only 600 available user I/O. The target device has 600 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[100]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[101]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[102]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[103]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[104]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[105]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[106]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[107]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[108]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[109]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[110]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[111]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[112]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[113]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[114]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[115]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[116]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[117]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[118]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[119]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[120]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[121]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[122]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[123]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[124]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[125]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[126]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[127]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[128]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[129]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[130]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[131]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[132]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[133]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[134]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[135]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[136]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[137]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[138]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[139]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[140]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[141]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[142]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[143]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[144]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[145]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[146]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[147]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[148]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[149]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[150]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[151]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[152]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[153]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[154]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[155]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[156]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[157]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[158]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[159]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[160]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[161]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[162]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[163]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[164]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[165]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[166]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[167]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[168]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[169]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[170]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[171]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[172]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[173]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[174]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[175]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[176]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[177]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[178]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[179]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[180]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[181]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[182]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[183]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[184]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[185]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[186]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[187]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[188]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[189]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ConfigBits_N_OBUF[18]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 39a4834e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:04 . Memory (MB): peak = 2520.812 ; gain = 47.566 ; free physical = 980 ; free virtual = 115610
+Phase 1 Placer Initialization | Checksum: 39a4834e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:04 . Memory (MB): peak = 2520.812 ; gain = 47.566 ; free physical = 980 ; free virtual = 115609
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 39a4834e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:04 . Memory (MB): peak = 2520.812 ; gain = 47.566 ; free physical = 995 ; free virtual = 115625
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 1 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 15:23:13 2022...

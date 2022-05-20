@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Thu May 19 17:09:03 2022
+# Process ID: 8915
+# Current directory: /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.sim/sim_1/synth/func/xsim
+# Command line: wbtcv -mode batch -source /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.sim/sim_1/synth/func/xsim/xsim.dir/LUT4AB_ConfigMem_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.sim/sim_1/synth/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/csb3ws/FABulousTG/FABulous_test_synthesis/FABulous_test_synthesis.sim/sim_1/synth/func/xsim/xsim.dir/LUT4AB_ConfigMem_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 19 17:09:03 2022...
